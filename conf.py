@@ -44,8 +44,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Julia Language'
-AUTHORS = u"Jeff Bezanson, Stefan Karpinski, Viral Shah, Alan Edelman 等"
-copyright = u'2012-2013, '+AUTHORS
+AUTHORS = u"作者 JuliaLang 译者 JuliaCN"
+copyright = u'2012-2014, '+AUTHORS
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -191,7 +191,7 @@ latex_elements = {
 'preamble': '''
 \\hypersetup{unicode=true}
 \\usepackage{CJKutf8}
-\\begin{CJK}{UTF8}{gkai}
+\\begin{CJK}{UTF8}{gbsn}
 \\AtEndDocument{\\end{CJK}}
 '''
 }
@@ -209,7 +209,7 @@ latex_documents = [
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
-#latex_use_parts = False
+latex_use_parts = True
 
 # If true, show page references after internal links.
 #latex_show_pagerefs = False
@@ -243,7 +243,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'JuliaLanguage', u'Julia Language Documentation',
+  ('index', 'JuliaLanguage', u'Julia 文档',
    AUTHORS, 'JuliaLanguage', 'One line description of project.',
    'Miscellaneous'),
 ]
